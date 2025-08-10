@@ -49,6 +49,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    word-wrap: break-word;
 }
 
 /* Loading Screen */
@@ -1223,8 +1224,24 @@ body {
     color: var(--neon-cyan);
 }
 
+/* Mobile/Desktop Command Display */
+.mobile-command {
+    display: none;
+}
+
+.desktop-command {
+    display: inline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    .mobile-command {
+        display: inline;
+    }
+    
+    .desktop-command {
+        display: none;
+    }
     .hamburger {
         display: flex;
     }
@@ -1267,6 +1284,14 @@ body {
     .hero-actions {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        text-align: center;
     }
     
     .about-content,
@@ -1302,8 +1327,38 @@ body {
     }
     
     .terminal-window {
-        min-width: 300px;
-        margin: 0 20px;
+        min-width: 280px;
+        margin: 0 10px;
+        max-width: calc(100vw - 20px);
+    }
+    
+    .terminal-body {
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .terminal-line {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    
+    .prompt {
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+    
+    .section-title {
+        text-align: center;
+        word-break: break-word;
+    }
+    
+    .hero-content {
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .container {
+        padding: 0 15px;
     }
     
     .social-links {
@@ -1314,15 +1369,15 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 15px;
+        padding: 0 10px;
     }
     
     .section {
-        padding: 60px 0;
+        padding: 50px 0;
     }
     
     .name-text {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .status-text {
@@ -1330,18 +1385,54 @@ body {
     }
     
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+    
+    .terminal-prompt {
+        font-size: 11px;
+    }
+    
+    .command {
+        font-size: 11px;
     }
     
     .cta-button {
-        padding: 12px 20px;
-        font-size: 14px;
+        padding: 10px 16px;
+        font-size: 13px;
+        margin: 5px;
+        min-width: 140px;
     }
     
     .project-card,
     .profile-card,
     .contact-form-container {
-        padding: 20px;
+        padding: 15px;
+    }
+    
+    .terminal-window {
+        min-width: 260px;
+        margin: 0 5px;
+    }
+    
+    .terminal-body {
+        padding: 12px;
+        font-size: 12px;
+    }
+    
+    .hero-actions {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-logo {
+        font-size: 16px;
+    }
+    
+    .profile-role {
+        font-size: 14px;
+        text-align: center;
     }
 }
 
