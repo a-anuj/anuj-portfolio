@@ -685,19 +685,13 @@ const terminalCommands = {
     whoami: () => 'anuj - Fullstack Web/App · AI/ML Engineer',
     about: () => 'Passionate developer who loves Linux, open source, and building amazing things.',
     skills: () => 'Web Development, Mobile Apps, AI/ML & Data Science, DevOps & Linux, Programming Languages, Databases & Storage, Security & Monitoring, Tools & Technologies',
-    projects: () => 'Check out my 18+ projects including Linux tools, AI/ML systems, and cloud infrastructure!',
+    projects: () => 'Check out my 10+ projects including AI/ML systems, Web and App development!',
     contact: () => 'Ready to collaborate? Send me a message using the contact form!',
     clear: () => '',
     sudo: () => 'Permission granted. Welcome to the matrix! 🚀',
     ls: () => 'home/ about/ projects/ contact/ skills/ resume.pdf',
     pwd: () => '/home/anuj/portfolio',
-    uname: () => 'Linux portfolio 5.15.0-anuj #1 SMP Ubuntu x86_64 GNU/Linux',
-    cat: () => 'Usage: cat [file]. Try: cat about.txt or cat skills.txt',
-    'cat about.txt': () => 'Linux developer passionate about open source, system administration, and building scalable applications.',
-    'cat skills.txt': () => 'JavaScript, TypeScript, Python, Go, Rust, React, Vue.js, Node.js, Docker, Kubernetes, AWS, Linux Admin, TensorFlow, PyTorch, PostgreSQL, MongoDB, Security Auditing, and 50+ more technologies!',
-    ps: () => 'PID TTY TIME CMD\n1234 pts/0 00:00:01 portfolio\n5678 pts/0 00:00:00 awesome_projects',
-    top: () => 'Tasks: 42 total, 1 running, 41 sleeping\nCPU: 15.2%us, 8.1%sy, 0.0%ni, 76.7%id\nMem: 8192MB total, 4096MB used',
-    df: () => 'Filesystem Size Used Avail Use% Mounted on\n/dev/sda1 100G 42G 58G 42% /\n/dev/sda2 500G 200G 300G 40% /home'
+    uname: () => 'portfolio v1.0.0 anuj',
 };
 
 // Add terminal functionality to hero section
