@@ -1,0 +1,95 @@
+/* ===== CSS Variables & Design Tokens ===== */
+:root {
+  /* Chocolate / Brown palette */
+  --gold: #6B4226;
+  --gold-light: #8B5E3C;
+  --gold-dark: #4A2E1A;
+  --gold-muted: rgba(107, 66, 38, 0.1);
+  --gold-glow: rgba(107, 66, 38, 0.15);
+
+  /* Light beige / cream backgrounds */
+  --bg-primary: #FAF6F1;
+  --bg-secondary: #F2ECE4;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F7F2EB;
+  --text-primary: #3B2314;
+  --text-secondary: #6B5545;
+  --text-muted: #9C8B7E;
+  --border: rgba(107, 66, 38, 0.15);
+  --border-hover: rgba(107, 66, 38, 0.3);
+
+  /* Typography */
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing */
+  --section-padding: 100px 0;
+  --container-width: 1100px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ===== Reset & Base ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--gold-light);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: var(--gold);
+  color: #FFFFFF;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
